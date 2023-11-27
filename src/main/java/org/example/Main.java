@@ -7,9 +7,16 @@ import org.example.spells.Spell;
 import org.example.spells.SpellService;
 import org.example.items.Item;
 import org.example.items.ItemService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
+
+        logger.debug("Inicio!");
+
         CharacterService characterService = new CharacterService();
         Character character = new Character("Gandalf", 10, "Human");
         characterService.createCharacter(character);
