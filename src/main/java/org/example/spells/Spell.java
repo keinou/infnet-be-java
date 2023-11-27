@@ -13,4 +13,9 @@ public class Spell {
         this.level = level;
         this.school = school;
     }
+
+    public String getName() {
+        return name;
+    }
+
 }
